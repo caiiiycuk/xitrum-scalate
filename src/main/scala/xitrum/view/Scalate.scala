@@ -11,7 +11,7 @@ import org.jboss.netty.handler.codec.serialization.ClassResolvers
 
 import xitrum.{Config, Action, Logger}
 
-class Scalate extends TemplateEngine {
+class ScalateTemplateEngine extends TemplateEngine {
   // Scalate takes several seconds to initialize.
   // On Xitrum startup, an instance of the configured template engine is created.
   // We take this chance to force Scalate to initialize on startup instead of on
